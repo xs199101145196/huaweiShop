@@ -1,0 +1,57 @@
+.smart-home {
+    background-color: pink;
+    overflow: hidden;
+}
+.top {
+    width: 1160px;
+    height:38px;
+    margin: 22px auto 12px;
+
+}
+.top h2 {
+    float:left;
+    width: 118px;
+    height:36px;
+    text-align: center;
+    line-height: 36px;
+}
+.top h2 a {
+    margin-left: 10px;
+    font-size: 24px;
+}
+h2 span {
+    background-color: skyblue;
+    float: left;
+    width: 8px;
+    height: 34px;
+    line-height: 36px;
+    border-radius: 3px;
+}
+.top ul {
+    float: left;
+    margin-left: 40px;
+}
+.top ul li{
+    float: left;
+    line-height: 36px;
+    margin-right: 15px;
+}
+.top ul li a {
+    font-size: 18px;
+}
+.top-right {
+    float:right;
+    line-height: 36px;
+}
+.top-right a {
+    font-size: 18px;
+}
+.top-right i {
+    float:right;
+    margin-left: 15px;
+    width:20px;
+    height:20px;
+    background:url(../img/icon-honor.png) no-repeat 0 0;
+    margin-top: 8px;
+
+}

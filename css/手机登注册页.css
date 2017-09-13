@@ -1,0 +1,317 @@
+* {
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            background-color: rgb(241, 241, 241);
+        }
+
+        .headbgc {
+            height: 67px;
+            background-color: #333333;
+        }
+
+        .headbgc .headcenter {
+            width: 998px;
+            height: 67px;
+            margin: 0px auto;
+        }
+
+        .headbgc .headcenter img {
+            margin-top: 6px;
+            float: left;
+        }
+
+        .headbgc .headcenter em {
+            font-style: normal;
+            font-size: 21px;
+            float: left;
+            color: #fff;
+            line-height: 50px;
+            margin-top: 4px;
+        }
+
+        .headbgc .headcenter span {
+            font-size: 23px;
+            float: left;
+            margin-left: 5px;
+            color: #fff;
+            line-height: 60px;
+        }
+
+        .form {
+            margin: 0px auto;
+            width: 988px;
+        }
+
+        .form .tag {
+            height: 32px;
+            margin-top: 29px;
+        }
+
+        .form .tag .phone {
+            display: inline-block;
+            width: 134px;
+            height: 32px;
+            background-color: #eb1c24;
+            color: #fff;
+            font-size: 12px;
+        }
+
+        .form .tag .phone i {
+            font-size: 26px;
+            line-height: 32px;
+            margin: 0 5px;
+            float: left;
+        }
+
+        .form .tag .phone span {
+            line-height: 30px;
+            float: left;
+        }
+        .form .tag .phone:hover span,
+        .form .tag .mail:hover span {
+            text-decoration: underline;
+        }
+
+
+        .form .tag .mail {
+            display: inline-block;
+            width: 134px;
+            height: 32px;
+            background-color: #999999;
+            color: #fff;
+            font-size: 12px;
+        }
+
+        .form .tag .mail i {
+            font-size: 24px;
+            line-height: 32px;
+            margin: 0 8px;
+            float: left;
+        }
+
+        .form .tag .mail span {
+            line-height: 30px;
+            float: left;
+        }
+
+        .form .tag .already,
+        .form .tag .denglu,
+        .form .tag .sanjiao {
+            float: right;
+            margin-left: 5px;
+            line-height: 28px;
+        }
+
+        .form .tag .denglu {
+            color: #d70506;
+            text-decoration: underline;
+        }
+
+        .form .content {
+            width: 794px;
+            padding: 52px 97px 38px 97px;
+            background-color: #fff;
+        }
+
+        .form .content h3 {
+            font-size: 28px;
+            color: #000;
+            font-weight: normal;
+        }
+
+        .form .content .intro {
+            color: #999;
+            line-height: 16px;
+            margin-top: 19px;
+        }
+
+        .form .content .bottomline {
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .form .content .country {
+            margin-top: 25px;
+        }
+
+        .form .content .nodetitle {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .form .content .country .china {
+            float: right;
+            margin-right: 5px;
+        }
+
+        .form .content .user {
+            margin-top: 25px;
+        }
+
+        .form .content .user .phonenumber,
+        .form .content .user .confirmcode,
+        .form .content .setpassword .password,
+        .form .content .setpassword .confirmpassword {
+            margin-top: 30px;
+        }
+
+        .form .content .inputintro {
+            font-size: 12px;
+            color: #999;
+            margin-right: 60px;
+        }
+        .form .content .user .phonenumber .testphone{
+            width: 100px;
+            height: 17px;
+            border:  1px solid black;
+            background-color: orange;
+            display: none;
+            margin-left: -20px;
+        }
+
+        .form .content .user .zhuceinput {
+            width: 163px;
+            height: 34px;
+            outline: none;
+            padding-left: 10px;
+            margin-right: 43px;
+            border: 1px solid #dcdcdc;
+        }
+
+        .form .content .user .confirmcode .duanxin {
+            width: 153px;
+        }
+
+        .form .content .user .confirmcode .huoqu {
+            width: 173px;
+            background-color: #f2f2f2;
+            padding: 0;
+            cursor: pointer;
+            color: #333;
+        }
+
+        .form .content .setpassword {
+            margin-top: 25px;
+        }
+
+        .form .content .setpassword .passwordinp {
+            width: 351px;
+            height: 34px;
+            outline: none;
+            padding-left: 10px;
+            border: 1px solid #dcdcdc;
+            margin-left: 15px;
+        }
+
+        .form .content .setpassword .confirmpassword .passwordinp {
+            margin-left: -10px;
+        }
+
+        .form .content .passrequire {
+            margin-left: 115px;
+            margin-top: 10px;
+        }
+
+        .form .content .passrequire .passre-title {
+            margin-bottom: 8px;
+        }
+
+        .form .content .passrequire img {
+            width: 12px;
+            height: 12px;
+            margin-right: 6px;
+        }
+
+        .form .content .passrequire span {
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        .form .content .passrequire .passstrength {
+            margin-top: 16px;
+        }
+
+        .form .content .passrequire .fengeline {
+            width: 361px;
+            height: 3px;
+            background-color: #EEE;
+        }
+
+        .form .content .passrequire .notice {
+            color: #666;
+            margin-top: 8px;
+        }
+
+        .form .content .service-title {
+            margin-top: 25px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .form .content .service-list {
+            margin-top: 19px;
+            line-height: 180%;
+        }
+
+        .form .content .service-list .hou {
+            margin-top: 8px;
+        }
+
+        .form .content .service-list a {
+            color: #00C0F4;
+            text-decoration: underline;
+        }
+
+        .form .zhucebutton {
+            margin-top: 38px;
+            text-align: center;
+        }
+
+        .form .zhucebutton .footzhuce {
+            width: 279px;
+            height: 45px;
+            background-color: #d70506;
+            border: solid 1px #9c9c9c;
+            color: #fff;
+            font-size: 14px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .box-bottom {
+            padding-bottom: 30px;
+            border-bottom: 1px solid #d7d7d7;
+        }
+
+        .footlogin {
+            text-align: center;
+            color: #999;
+            line-height: 25px;
+            height: 80px;
+        }
+
+        .footlogin .rule {
+            margin-top: 30px;
+        }
+
+        .footlogin .rule em {
+            font-style: normal;
+            font-size: 16px;
+        }
+
+        .footlogin .rule a {
+            color: #999;
+            font-size: 14px;
+            margin: 0 7px;
+        }
+
+        .footlogin .rule a:hover {
+            text-decoration: underline;
+        }

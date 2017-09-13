@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" class="ico"> -->
+	<!--<link rel="stylesheet" href="font/iconfont.css">-->
+	<link rel="stylesheet" href="css/css-shopCar/base.css">
+	<link rel="stylesheet" href="css/css-shopCar/shopCar.css">
+	<link rel="stylesheet" href="./font/iconfont.css"/>
+</head>
+<script src='js/jquery.js'></script>
+<script>
+	$(function(){
+		$(".dels").click(function(event){
+			var index = $(this).parents("tr:eq(0)").attr("index");
+			showdelbox(index,event);
+		});
+
+		//多选按钮的事件
+		$("tbody").on("click",":checkbox",function(){
+			if($("tbody :checkbox:checked").length == $("tbody :checkbox").length){
+				$(".collect :checkbox").prop("checked",true);
+				$("thead :checkbox").prop("checked",true);
+			}else{
+				$(".collect :checkbox").prop("checked",false);
+				$("thead :checkbox").prop("checked",false);
+			}
+		});
+		$(".collect").on("click",":checkbox",function(){
+			$(":checkbox").prop("checked",$(".collect :checkbox").prop("checked"));
+		});
+		$("thead").on("click",":checkbox",function(){
+			$(":checkbox").prop("checked",$("thead :checkbox").prop("checked"));
+		});
+		//删除选中的物品
+		$("#delall").click(function(event){
+			var index=[];
+			$("tbody :checked").each(function(){
+				index.push($(this).parents("tr").attr("index"));
+			});
+			console.log() ;
+			showdelbox(index,event);
+		});
+	})
+
+
+
+
+
+	//删除购物车中商品的功能
+	var showdelbox = function(index,event){
+		$("#delbox").offset({
+			top: (event.pageY - 150)>0?(event.pageY - 150):(event.pageY + 150),
+			'left': (event.pageX -300)>0?(event.pageX -300):(event.pageX + 50)
+		}).show();
+		$('#delbox .yes').click(index,function() {
+			if(index instanceof Array){
+				for(var key in index){
+					$('tbody tr[index="'+index[key]+'"]').remove();
+				}
+			}else{
+				$('tbody tr[index="'+index+'"]').remove();
+			}
+			if($("tbody tr").length<1){
+				$("table").remove();
+				$(".collect").remove();
+			}
+			$('#delbox').hide();
+		});
+		$('#delbox .no').click(function(){
+			$('#delbox').hide();
+		})
+	}
+</script>
+<body>
+	<!--<div class="top">-->
+		<!--<div class="w">-->
+		<!--<ul class="left">-->
+			<!--<li><a href="#">华为官网</a></li>-->
+			<!--<li>|</li>-->
+			<!--<li><a href="#">荣耀官网</a></i></li>-->
+			<!--<li>|</li>-->
+			<!--<li class="h"><a href="#">软件应用</a><i class="iconfont">&#xe638;</i>-->
+				<!--<div class="b">-->
+					<!--<p><a href="#">EMUI</a></p>-->
+					<!--<p><a href="#">应用市场</a></p>-->
+					<!--<p><a href="#">云服务</a></p>-->
+					<!--<p><a href="#">开发者联盟</a></p>-->
+				<!--</div>-->
+			<!--</li>-->
+			<!--<li>|</li>-->
+			<!--<li><a href="#">花粉俱乐部</a></li>-->
+			<!--<li>|</li>-->
+			<!--<li><a href="#">Select Region</a></li>-->
+		<!--</ul>-->
+		<!--<ul class="right">-->
+			<!--<li><a href="#">登录</a></li>-->
+			<!--<li><a href="#">注册</a></li>-->
+			<!--<li>|</li>-->
+			<!--<li><a href="#">我的订单</a></li>-->
+			<!--<li>|</li>-->
+			<!--<li><a href="#">手机版</a></li>-->
+			<!--<li>|</li>-->
+			<!--<li><a href="#">V码(优购码)</a></li>-->
+			<!--<li>|</li>-->
+			<!--<li class="h"><a href="#">网站导航</a><i class="iconfont">&#xe638;</i>-->
+				<!--<div class="b">-->
+					<!--<p><a href="#">帮助中新</a></p>-->
+					<!--<p><a href="#">PC软件</a></p>-->
+					<!--<p><a href="#">数字音乐</a></p>-->
+					<!--<p><a href="#">爱旅</a></p>-->
+				<!--</div>-->
+			<!--</li>-->
+		<!--</ul>-->
+		<!--</div>-->
+	<!--</div>-->
+	<!--top的结束 -->
+	<!-- heard的开始 -->
+	<div class="head">
+	<div class="w">
+		<div class="left"><a href="#" title="华为商城"><img src="img/logo20170312023120.png" alt=""></a></div>
+		<div class="right"></div>
+		</div>
+	</div>
+	<!-- main的开始 -->
+	<div class="main">
+		<div class="w">
+			<table border="1" cellspacing="0" cellpadding="0">
+				<thead>
+				<tr>
+					<th class="check"><input type="checkbox" class="checkall" />
+					</th><th class="thing">商品</th><th class="price">单价</th><th class="number">数量</th><th class="all1">小计</th><th class="action">操作</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr index="1">
+					<td rowspan="3" id="tr-check" class="check"><input type="checkbox" class="checkbox inp1" /></td>
+					<td  class="thing sp">
+						<div id="tr-div"><a href="#" ><img src="img/mate.jpg" height="63px" width="63px" alt="" id="m9"/></a>
+							<div class="discr">
+								<a href="#">HUAWEI Mate 9 Pro 4GB+64GB 全网通版（琥珀金）</a><br/>
+								<span>颜色：琥珀金</span>
+							</div>
+						</div></td>
+					<td id="price" class="price">¥4699.00</td>
+					<td rowspan="3" id="number-phone" class="number">
+						<span id="gs1">1</span>
+						<a href="javascript:void(0)" id="jia1"><img src="img/jia.png" alt=""width="18px" height="18px"title="加"/></a>
+						<a href="javascript:void(0)" id="jian1"><img src="img/jian.png" alt="" width="18px" height="18px" title="减"/></a></td>
+					<td rowspan="3" id="money" class="all1">¥4699</td>
+					<td rowspan="3" id="action" class="action"><a href="javascript:void(0)" class="dels" id="del1">删除</a></td>
+				</tr>
+				<tr index="1">
+					<td class="zs">
+						<div class="gift" ><a href="#" ><img src="img/netcard.jpg" height="63px" width="63px" alt="" id="gift"/></a>
+							<div class="discr"><span>[配]</span>
+								<a href="#">天际通 7天全球上网流量</a>
+							</div>
+						</div>
+					</td>
+					<td class="price">
+						<del>原价:¥196.00</del>
+						<br/>
+						现价:¥0.00
+					</td>
+				</tr>
+				<tr index="1">
+					<td class="zs">
+						<div class="gift"><a href="#" ><img src="img/phonett.jpg" height="63px" width="63px" alt="" id="tt"/></a>
+							<div class="discr"><span>[配]</span>
+								<a href="#">HUAWEI Mate 9 Pro 智能视窗保护套（深灰色）</a>
+							</div>
+						</div>
+					</td>
+					<td class="price">
+						<del>原价:¥299.00</del>
+						<br/>
+						现价:¥0.00
+					</td>
+				</tr>
+				<tr index="2">
+					<td class="check"><input type="checkbox" class="checkall" /></td>
+					<td class="thing sp">
+						<div class="tr-div"><a href="#" id="imgphone"><img src="img/watch.jpg" height="63px" width="63px" alt="" id="watch"/></a>
+							<div class="discr">
+								<a href="#" >HUAWEI WATCH 2华为第二代智能运动手表蓝牙版（碳晶黑）</a><br/>
+								<span>版本：蓝牙版颜色：碳晶黑</span>
+							</div>
+						</div>
+					</td>
+					<td class="price">¥1688.00</td>
+					<td class="number ">
+						<span id="gs2">1</span>
+						<a href="javascript:void(0)" id="jia2"><img src="img/jia.png" alt="" width="18px" height="18px"title="加"/></a>
+						<a href="javascript:void(0)" id="jian2"><img src="img/jian.png" alt="" width="18px" height="18px" title="减"/></a>
+					</td>
+					<td class="all1">¥1688.00</td>
+					<td class="action"><a href="javascript:void(0)" class="dels" id="del2">删除</a></td>
+				</tr>
+				</tbody>
+			</table>
+			<div class="collect">
+				<div class="w">
+					<div class="ctl">
+						<input type="checkbox"  id="checklast" /><a href="javascript:void(0)" id="qx"><label for="checklast">全选</label></a>
+						<a href="javascript:void(0)" id="delall">删除选中商品</a>
+					</div>
+					<div class="ctr">
+						<span id="hj">合计(不含运费)：	<span id="moneyall">¥6387.00</span></span><br/>
+						<span id="zj">总计：¥6387.00	节省：¥0.00</span>
+					</div>
+					<div>
+						<input type="button" value="去结算" id="account"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--<div  id="delbox2">-->
+		<!--<p>您确认要删除该商品吗?</p>-->
+		<!--<a href="javascript:void(0)" class="yes">是</a>-->
+		<!--<a href="javascript:void(0)" class="no">否</a>-->
+		<!--&lt;!&ndash;<span class="yes">是</span><span class="no">否</span>&ndash;&gt;-->
+	<!--</div>-->
+	<!-- slogan-container的开始 -->
+	<div class="slogan-container ">
+		<div class="w">
+		<ul>
+			<li><a href="#" class="one"><i></i>500强企业 品质保证</a></li>
+			<li><a href="#" class="two"><i></i>7天退货 15天换货</a></li>
+			<li><a href="#" class="three"><i></i>99元起免运费</a></li>
+			<li><a href="#" class="four"><i></i>448家维修网点 全国联保</a></li>
+		</ul>
+		</div>
+	</div>
+	<!-- server-container的开始 -->
+	<div class="server-container">
+		<div class="w">
+			<div class="server">
+				<dl class="s1">
+					<dt><i></i>帮助中心</dt>
+					<dd>
+						<ul>
+							<li><a href="#">购物指南</a></li>
+							<li><a href="#">配送方式</a></li>
+							<li><a href="#">支付方式</a></li>
+							<li><a href="#">常见问题</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl class="s2">
+					<dt><i></i>售后服务</dt>
+					<dd>
+						<ul>
+							<li><a href="#">购物指南</a></li>
+							<li><a href="#">配送方式</a></li>
+							<li><a href="#">支付方式</a></li>
+							<li><a href="#">常见问题</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl class="s3">
+					<dt><i></i>技术支持</dt>
+					<dd>
+						<ul>
+							<li><a href="#">购物指南</a></li>
+							<li><a href="#">配送方式</a></li>
+							<li><a href="#">支付方式</a></li>
+							<li><a href="#">常见问题</a></li>
+							<li><a href="#">常见问题</a></li>
+							<li><a href="#">常见问题</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl class="s4">
+					<dt><i></i>关于商城</dt>
+					<dd>
+						<ul>
+							<li><a href="#">购物指南</a></li>
+							<li><a href="#">配送方式</a></li>
+							<li><a href="#">支付方式</a></li>
+							<li><a href="#">常见问题</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl class="s5">
+					<dt><i></i>关注我们</dt>
+					<dd>
+						<ul>
+							<li><a href="#">购物指南</a></li>
+							<li><a href="#">配送方式</a></li>
+							<li><a href="#">支付方式</a></li>
+							<li><a href="#">常见问题</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+	<!-- footer的开始 -->
+	<div class="footer-container">
+		<div class="w">
+		<div class="footer">
+			<div class="footerother">
+				<p>
+					热门
+					<a href="#">华为手机</a>:
+					<a href="#">华为P10</a>&nbsp;|
+					<a href="#">荣耀V9</a>&nbsp;|
+					<a href="#">荣耀8青春版</a>&nbsp;|
+					<a href="#">华为Mate9</a>&nbsp;|
+					<a href="#">荣耀Magic</a>&nbsp;|
+					<a href="#">荣耀8</a>&nbsp;|
+					<a href="#">荣耀畅玩6X</a>&nbsp;|
+					<a href="#">荣耀NOTE 8</a>&nbsp;|
+					<a href="#">荣耀NOTE 8</a>&nbsp;|
+					<a href="#">荣耀NOTE 8</a>&nbsp;|
+					<a href="#">荣耀NOTE 8</a>&nbsp;|
+					<a href="#">荣耀NOTE 8</a>&nbsp;|
+					<a href="#">荣耀NOTE 8</a>
+				</p>
+			</div>
+			<div class="copyright">
+				<p>
+					<a href="#">隐私政策</a>
+					<a href="#">服务协议</a>
+					<span> Copyright © 2012-2017 VMALL.COM 版权所有 保留一切权利</span>
+				</p>
+				<p class="address">
+					<a href="#"><img src="imgs/police.png" alt="">
+					苏公网安备 32011402010009号</a>&nbsp;|
+					<a href="#"> 苏ICP备09062682号-9</a>&nbsp;|
+					<span>增值电信业务经营许可证：苏B2-20130048 </span>&nbsp;|
+					<a href="#">网络文化经营许可证：苏网文[2015] 1599-026号</a>
+				</p>
+				<p class="img">
+					<a href="#"><img src="img/1.jpg" height="32" width="90" alt=""></a>
+					<a href="#"><img src="img/2.png" height="32" width="90" alt=""></a>
+					<a href="#"><img src="img/3.png" height="32" width="90" alt=""></a>
+					<a href="#"><img src="img/4.png" height="32" width="90" alt=""></a>
+				</p>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div  id="delbox">
+		<p>您确认要删除该商品吗?</p>
+		<a href="javascript:void(0)" class="yes">是</a>
+		<a href="javascript:void(0)" class="no">否</a>
+		<!--<a class="yes">是</span><span class="no">否</span>-->
+	</div>
+</body>
+</html>

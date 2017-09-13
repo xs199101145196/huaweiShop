@@ -1,0 +1,39 @@
+body,p,thead,th,tr,h1,h2,h3,h4,h5,h6,ul,ol,li,input,img,button,span,dd {
+	margin: 0;
+	padding: 0;
+}
+ul,ol {
+	list-style:none;
+}
+img,input {
+	border: 0 none;
+	outline-style: none;
+}
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 12px;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+}
+img {
+	vertical-align: middle;
+}
+body {
+	/*font: normal 12px/150% ;*/
+	background-color: #f0f0f0;
+}
+.w {
+	width: 1200px;
+	margin:0 auto;
+}
+body {
+	background-color: #ffffff;
+}
+a:hover {
+	color: skyblue;
+	text-decoration: none;
+}
+
+

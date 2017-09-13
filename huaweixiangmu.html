@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        body {
+            width: 1495px;
+            margin: 0 auto;
+        }
+        
+        .f-top {
+            height: 120px;
+            border-bottom: 1px solid black;
+        }
+        
+        .f-top .vmall {
+            float: left;
+            padding-top: 43px;
+        }
+        
+        .f-top .right {
+            float: right;
+            width: 774px;
+            height: 119px;
+        }
+        
+        .f-top .right .ul1 li {
+            float: left;
+            width: 193px;
+            height: 118px;
+        }
+        
+        .f-top .right .ul1 li:first-child {
+            border-bottom: 2px solid red;
+        }
+        
+        .f-top .right .ul1 li a span {
+            display: inline-block;
+            background: url("img/icon38.png") no-repeat;
+            height: 33px;
+            /* text-align: center; */
+            margin-top: 42px;
+            padding-top: 10px;
+            padding-left: 35px;
+        }
+        
+        .f-top .right .ul1 li a .ones {
+            background-position: 0 0;
+        }
+        
+        .f-top .right .ul1 li a .twos {
+            background-position: 0 -47px;
+        }
+        
+        .f-top .right .ul1 li a .threes {
+            background-position: 0 -94px;
+        }
+        
+        .f-top .right .ul1 li a .fours {
+            background-position: 0 -141px;
+        }
+        /* <-----------------------中间开始---------------------------------> */
+        
+        .zj {
+            background: url("img/bg60.jpg") no-repeat;
+            height: 655px;
+            width: 1492px;
+            background-position: 0 94px;
+            position: relative;
+            border-bottom: 1px solid black;
+            overflow: hidden;
+        }
+        
+        .zj .zjz {
+            width: 680px;
+            height: 655px;
+        }
+        
+        .zj .zjz a img {
+            position: absolute;
+            left: 112px;
+            top: 145px;
+        }
+        
+        .zj .zjys {
+            width: 800px;
+            height: 312px;
+            position: absolute;
+            left: 927px;
+            top: 175px;
+        }
+        
+        .zj .zjys h {
+            font-size: 38px;
+            display: block;
+            font-weight: bold;
+        }
+        
+        .zj .zjys span {
+            font-size: 32px;
+            font-weight: bold;
+            color: red;
+        }
+        
+        .xx {
+            width: 652px;
+            height: 214px;
+            position: absolute;
+            left: 830px;
+            top: 392px;
+        }
+        
+        .xx .zjyxz {
+            width: 220px;
+            height: 214px;
+            display: inline-block
+        }
+        
+        .xx .zjyxz p {
+            background: url("img/sprites22.png") no-repeat;
+            width: 194px;
+            height: 214px;
+        }
+        
+        .xx .zjyxz p a,
+        .xx .zjyxy p a {
+            padding-top: 188px;
+            display: block;
+            text-align: center;
+        }
+        
+        .xx .zjyxy {
+            width: 220px;
+            height: 214px;
+            position: relative;
+            display: inline-block
+        }
+        
+        .xx .zjyxy p {
+            background: url("img/sprites22.png") no-repeat;
+            width: 194px;
+            height: 214px;
+            background-position: -204px 0;
+        }
+        
+        .xx .zjyxy p a img {
+            position: absolute;
+            left: 26px;
+            top: 26px;
+            width: 140px;
+            height: 140px;
+        }
+        
+        .xx .app-android-banner-tips {
+            font-size: 14px;
+            color: #999;
+            position: absolute;
+            left: 162px;
+            top: 238px;
+        }
+        /* jieshu */
+        
+        .center {
+            /* height: 362px; */
+            border-bottom: 1px solid black;
+        }
+        
+        .center ul {
+            height: 342px;
+            float: left;
+        }
+        
+        .center ul li {
+            height: 312px;
+            float: left;
+            width: 373px;
+            text-align: center;
+            padding-top: 33PX;
+        }
+        
+        .center ul li h {
+            font-size: 16px;
+            margin-top: 35px;
+        }
+        
+        .center ul li img {
+            margin-top: 30px;
+        }
+        
+        .center span {
+            font-size: 26px;
+        }
+        /* ................................................................. */
+        
+        .fl {
+            padding-top: 60px;
+            border-bottom: 1px solid black;
+        }
+        
+        .fl,
+        .fl ul {
+            height: 295px;
+        }
+        
+        .fl ul li {
+            width: 25%;
+            float: left;
+            padding: 18px 0;
+            margin-bottom: 35px;
+            text-align: center;
+        }
+        /* .................................. */
+        
+        .jl {
+            height: 62px;
+            padding: 18px 0;
+            border-bottom: 1px solid black;
+        }
+        
+        .jl li {
+            width: 25%;
+            height: 45px;
+            line-height: 45px;
+            float: left;
+            text-align: center;
+        }
+        
+        .jl li a i {
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            display: inline-block;
+            background: url("img/icon14.png");
+            vertical-align: middle
+        }
+        
+        .jl li a .a {
+            background-position: -216px 0;
+        }
+        
+        .jl li a .b {
+            background-position: -270px 0;
+        }
+        
+        .jl li a .c {
+            background-position: -324px 0;
+        }
+        
+        .jl li a .d {
+            background-position: -378px 0;
+        }
+        /* ..................................... */
+        
+        .z {
+            height: 180px;
+            padding: 25px 0;
+        }
+        
+        .z dl {
+            float: left;
+            width: 20%;
+            text-align: center;
+            font-size: 20px;
+        }
+        
+        .z dl i {
+            background: url("img/icon14.png");
+            width: 16px;
+            height: 14px;
+            display: inline-block;
+            margin: 3px 8px 0;
+            text-align: center;
+        }
+        
+        .z .one i {
+            background-position: 0 -54px;
+        }
+        
+        .z .two i {
+            background-position: -26px -54px;
+        }
+        
+        .z .three i {
+            background-position: -52px -54px;
+        }
+        
+        .z .four i {
+            background-position: -78px -54px;
+        }
+        
+        .z .five i {
+            background-position: 0 -78px;
+        }
+        
+        .z dl dt {
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+        
+        .z dl dd ul li {
+            padding-left: 25px;
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="f-top ">
+        <div class="vmall">
+            <a href="#"><img src="img/01.png" alt=""></a>
+        </div>
+        <div class="right">
+            <ul class="ul1">
+                <li class="one"><a href="#"><span class="ones">Android 手机</span></a></li>
+                <li class="two"><a href="#"><span class="twos">iOS及其它手机</span></a></li>
+                <li class="three"><a href="#"><span class="threes">官方微信</span></a></li>
+                <li class="four"><a href="#"><span class="fours">支付宝服务窗</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="zj">
+        <div class="zjz">
+            <a href="#">
+                <img src="img/app_android_banner_vmall.jpg" alt="">
+            </a>
+        </div>
+        <div class="zjys">
+            <h>华为商城客户端</h>
+            <span>我的掌上购机神器</span>
+
+        </div>
+        <div class="xx">
+            <div class="zjyxz">
+                <p>
+                    <a href="#">
+                        <span>下载到电脑</span>
+                    </a>
+                </p>
+            </div>
+
+            <div class="zjyxy">
+                <p>
+                    <a href="#">
+                        <img src="../img/app_android_qrcode_vmall.PNG" alt="">
+                        <span>下载到电脑</span>
+                    </a>
+                </p>
+            </div>
+            <div class="app-android-banner-tips">适用于Android 4.0 以上系统</div>
+        </div>
+    </div>
+    <!-- 下面的center----------------------------------------------  -->
+
+
+
+    <div class="center">
+        <ul>
+            <li>
+                <h>抢购提醒</h>
+                <p>不再错过，快人一步</p>
+                <p><img src="img/app_android_feature_vmall_1.jpg" alt=""></p>
+
+            </li>
+            <li>
+                <h>订单状态</h>
+                <p>订单、物流状态尽在掌握</p>
+                <p><img src="img/app_android_feature_vmall_2.jpg" alt=""></p>
+
+            </li>
+            <li>
+                <h>最新优惠</h>
+                <p>随时随地了解商城最新活动及优惠</p>
+                <p><img src="img/app_android_feature_vmall_3.jpg" alt=""></p>
+
+            </li>
+            <li>
+                <h>智能服务</h>
+                <p>GPS自动定位推荐在您附近的网点</p>
+                <p><img src="img/app_android_feature_vmall_4.jpg" alt=""></p>
+
+            </li>
+        </ul>
+        <span>其他平台下载</span>
+    </div>
+
+    <div class="fl">
+        <ul>
+            <li>
+                <a href="#"><img src="img/img78.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/img79.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/img80.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/img81.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/img82.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/img83.png" alt=""></a>
+            </li>
+        </ul>
+    </div>
+    <!-- ..................... -->
+    <div class="jl">
+        <ul>
+            <li><a href="#"><i class="a"></i>500强企业 品质保证</a></li>
+            <li><a href="#"><i class="b"></i>500强企业 品质保证</a></li>
+            <li><a href="#"><i class="c"></i>500强企业 品质保证</a></li>
+            <li><a href="#"><i class="d"></i>500强企业 品质保证</a></li>
+        </ul>
+    </div>
+    <!-- .............. -->
+    <div class="z">
+        <dl class="one">
+            <dt><i></i>帮助中心1</dt>
+            <dd>
+                <ul>
+                    <li>帮助中心</li>
+                    <li>帮助中心</li>
+                    <li>帮助中心</li>
+                    <li>帮助中心</li>
+                </ul>
+            </dd>
+        </dl>
+        <dl class="two">
+            <dt><i></i>帮助中心1</dt>
+            <dd>
+                <ul>
+                    <li>帮助中心</li>
+                    <li>帮助中心</li>
+                    <li>帮助中心</li>
+                    <li>帮助中心</li>
+                </ul>
+            </dd>
+        </dl>
+        <dl class="three">
+            <dt><i></i>帮助中心1</dt>
+            <dd>
+                <ul>
+                    <li>帮助中心</li>
+                    <li>帮助中心</li>
+                    <li>帮助中心</li>
+                    <li>帮助中心</li>
+                </ul>
+            </dd>
+        </dl>
+        <dl class="four">
+            <dt><i></i>帮助中心1</dt>
+            <dd>
+                <ul>
+                    <li>帮助中心</li>
+                    <li>帮助中心</li>
+                    <li>帮助中心</li>
+                    <li>帮助中心</li>
+                </ul>
+            </dd>
+        </dl>
+        <dl class="five">
+            <dt><i></i>帮助中心1</dt>
+            <dd>
+                <ul>
+                    <li>帮助中心</li>
+                    <li>帮助中心</li>
+                    <li>帮助中心</li>
+                    <li>帮助中心</li>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+</body>
+
+</html>

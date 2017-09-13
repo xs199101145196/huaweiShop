@@ -1,0 +1,56 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+input,
+span,
+i,
+em,
+img,
+ul,
+ol,
+li {
+    margin:0;
+    padding:0;
+}
+
+img {
+    vertical-align:bottom;
+    border:0;
+}
+
+a {
+    text-decoration:none;
+    color:#000000;
+}
+
+input {
+    border:0 none;
+    outline-style:none;
+}
+
+ul {
+    list-style:none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5
+h6,
+i,
+em {
+    font-style:normal;
+    font-weigth:normal;
+    font-family: \5FAE\8F6F\96C5\9ED1,Arial,Helvetica,sans-serif;
+}
+
+.w {
+    width: 1200px;
+    margin:0 auto;
+}

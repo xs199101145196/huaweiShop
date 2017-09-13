@@ -1,0 +1,211 @@
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .headlogin ul li {
+            float: left;
+        }
+
+        .headlogin ul li.headLeft {
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+
+        .headlogin ul li.headMiddle {
+            font-size: 20px;
+            margin-top: 18px;
+            color: #999;
+        }
+
+        .headlogin ul li.headRight {
+            font-size: 23px;
+            margin-top: 17px;
+            margin-left: 3px;
+            color: #999;
+        }
+
+        .body {
+            background-color: #f8f8f8;
+        }
+
+        .login {
+            width: 1002px;
+            margin: 0 auto;
+        }
+
+        .headlogin {
+            height: 100px;
+        }
+
+        .mainlogin {
+            overflow: hidden;
+        }
+
+        .mainlogin .bgi {
+            width: 640px;
+            height: 588px;
+            float: left;
+            background: url(../img/bg11.jpg) no-repeat;
+        }
+
+        .mainlogin .mainRight {
+            float: left;
+            width: 290px;
+        }
+
+        .mainlogin .mainRight .weltex {
+            font-size: 30px;
+            color: #ea5e00;
+            font-weight: bold;
+            line-height: 40px;
+            margin-top: 50px;
+        }
+
+        .mainlogin .mainRight .inp {
+            width: 270px;
+            height: 38px;
+            border: 1px solid #bcbcbc;
+            padding-left: 10px;
+            font-size: 14px;
+            line-height: 16px;
+            outline: 0;
+            margin-top: 15px;
+        }
+
+        .mainlogin .mainRight .confirm {
+
+            overflow: hidden;
+        }
+
+        .mainlogin .mainRight .confirm .inpConfirm {
+            width: 135px;
+            height: 38px;
+            float: left;
+        }
+
+        .mainlogin .mainRight .confirm img {
+            float: left;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        .mainlogin .mainRight .confirm .fresh {
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+
+        .mainlogin .mainRight .password {
+            overflow: hidden;
+            font-size: 12px;
+            margin: 26px 0;
+        }
+
+        .mainlogin .mainRight .password input {
+            margin-top: 3px;
+            margin-right: 3px;
+            float: left;
+        }
+
+        .mainlogin .mainRight .password a {
+            float: right;
+            margin-right: 40px;
+        }
+        .mainlogin .mainRight .password a:hover{
+            text-decoration: underline;
+        }
+
+        .mainlogin .mainRight .clicklogin {
+            width: 280px;
+            padding: 20px 0;
+            border-top: 1px solid #d7d7d7;
+        }
+
+        .mainlogin .mainRight .clicklogin input {
+            width: 280px;
+            line-height: 44px;
+            background-color: RGB(180, 7, 7);
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+            color: #fff;
+            border-width: 0;
+            cursor: pointer;
+            outline: none;
+        }
+        .mainlogin .mainRight .clicklogin input:hover{
+            background-color: #c70000;
+        }
+
+        .mainlogin .mainRight .otherway {
+            overflow: hidden;
+        }
+
+        .mainlogin .mainRight .otherway li {
+            float: left;
+            font-size: 12px;
+            line-height: 25px;
+            color: #999;
+            margin-right: 3px;
+        }
+
+        .mainlogin .mainRight .zhuce {
+            margin-top: 30px;
+        }
+
+        .mainlogin .mainRight .zhuce a {
+            color: #ff9937;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .mainlogin .mainRight .zhuce a:hover{
+            text-decoration: underline;
+        }
+
+        .mainlogin .mainRight .tips {
+            margin-top: 10px;
+            padding-top: 10px;
+            width: 299px;
+            color: #999;
+            line-height: 16px;
+        }
+
+        .footlogin {
+            border-top: 1px solid #d7d7d7;
+            margin-top: 50px;
+            margin-left: -100px;
+            width: 1219px;
+            text-align: center;
+            color: #999;
+            line-height: 25px;
+            height: 150px;
+        }
+
+        .footlogin .rule {
+            margin-top: 30px;
+        }
+
+        .footlogin .rule em {
+            font-style: normal;
+            font-size: 16px;
+        }
+
+        .footlogin .rule a {
+            color: #999;
+            font-size: 14px;
+            margin: 0 7px;
+        }
+
+        .footlogin .rule a:hover {
+            text-decoration: underline;
+        }

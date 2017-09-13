@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>华为专区</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/华为专区.css"/>
+
+</head>
+<body>
+<div class="content">
+
+
+    <div class="f-top">
+        <div class="f-top-box">
+            <a href="javascript:">进入华为商城</a>
+        </div>
+    </div>
+    <div class="f-top1">
+        <a href="javascript:">
+            <img src="img/2.jpg" alt=""/>
+        </a>
+    </div>
+    <div class="f-top2">
+
+        <ul class="w">
+            <li class="aa"><a href="#">国品手机</a></li>
+            <li><a href="#">数码特惠</a></li>
+            <li><a href="#">优选配件</a></li>
+            <li><a href="#">1折秒杀</a></li>
+            <li><a href="#">学生专场</a></li>
+        </ul>
+
+    </div>
+    <div class="f-top3">
+        <a href="javascript:"><img id="img3" src="img/3.jpg" alt=""/></a>
+    </div>
+    <div class="f-top4">
+        <a href="javascript:"><img src="img/4.jpg" alt=""/></a>
+    </div>
+    <div class="f-top4">
+        <a href="javascript:"><img src="img/5.jpg" alt=""/></a>
+    </div>
+    <div class="f-top5">
+        <a href="javascript:"><img src="img/6.jpg" alt=""/></a>
+    </div>
+    <div class="f-top6">
+        <a href="javascript:"><img src="img/7.jpg" alt=""/></a>
+    </div>
+    <div class="f-top7">
+        <a href="javascript:"><img src="img/8.jpg" alt=""/></a>
+    </div>
+    <div class="f-top8">
+        <a href="javascript:"><img src="img/9.jpg" alt=""/></a>
+    </div>
+    <div class="f-top9">
+        <a href="javascript:"><img src="img/10.jpg" alt=""/></a>
+    </div>
+    <div class="f-top10">
+        <a href="javascript:"><img src="img/11.jpg" alt=""/></a>
+    </div>
+    <div class="f-top11">
+        <a href="javascript:"><img src="img/12.jpg" alt=""/></a>
+    </div>
+    <div class="f-top12">
+        <a href="javascript:"><img src="img/13.jpg" alt=""/></a>
+    </div>
+    <div class="f-top13">
+        <a href="javascript:"><img src="img/14.jpg" alt=""/></a>
+    </div>
+    <div class="f-top14">
+        <a href="javascript:"><img src="img/15.jpg" alt=""/></a>
+    </div>
+    <div class="f-top15">
+        <a href="javascript:"><img src="img/16.jpg" alt=""/></a>
+    </div>
+    <div class="f-top16">
+        <a href="javascript:"><img src="img/17.jpg" alt=""/></a>
+    </div>
+    <div class="f-top17">
+        <a href="javascript:"><img src="img/18.jpg" alt=""/></a>
+    </div>
+    <div class="f-top18">
+        <a href="javascript:"><img src="img/19.jpg" alt=""/></a>
+    </div>
+    <div class="f-top19">
+        <a href="javascript:"><img src="img/20.jpg" alt=""/></a>
+    </div>
+</div>
+<script>
+
+    var ftop = document.getElementsByClassName("f-top")[0]
+    var ftop1 = document.getElementsByClassName("f-top1")[0]
+    var ftop2 = document.getElementsByClassName("f-top2")[0]
+    var ftop3 = document.getElementsByClassName("f-top3")[0]
+    var ftop4 = document.getElementsByClassName("f-top4")[0]
+
+    var ftop19 = document.getElementsByClassName("f-top19")[0]
+    var img = document.getElementById("img3")
+
+    window.onscroll = function () {
+        var scrolltop = getScroll().scrollTop
+        if (scrolltop > ftop.offsetHeight) {
+            ftop2.className = "f-top2  fixed";
+        } else {
+            ftop2.className = "f-top2 ";
+        }
+
+
+    }
+
+
+    ftop19.onclick = function (e) {
+        e = e || window.event;
+        window.scrollTo(0, 0)
+
+    }
+
+
+    function getScroll() {
+        return {
+            scrollLeft: window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft || 0,
+            scrollTop: window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
+        };
+    }
+</script>
+</body>
+</html>

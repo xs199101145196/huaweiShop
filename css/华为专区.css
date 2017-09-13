@@ -1,0 +1,47 @@
+.f-top {
+    height: 555px;
+    background: url("../img/1.jpg") no-repeat;
+}
+.content{
+    width: 100%;
+    overflow: hidden;
+}
+.f-top-box {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.f-top-box a {
+    float: right;
+    margin-top: 10px;
+    color: yellow;
+}
+
+.f-top2 {
+    height: 50px;
+    /*line-height: 50px;*/
+    background-color: #0099ff;
+}
+
+.f-top2 ul li {
+    float: left;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.f-top2 ul li a {
+    font-size: 16px;
+    color: yellow;
+}
+
+.f-top2 .aa a {
+    color: #FF9900;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 460px;
+}

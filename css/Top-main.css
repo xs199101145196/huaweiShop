@@ -1,0 +1,387 @@
+/*初始化*/
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input {
+    margin: 0;
+    padding: 0;  /*清除元素的内外边距*/
+}
+
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;  /*外面环绕线*/
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/*去掉原样式中的小黑点*/
+
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+
+
+table {
+    border-collapse: collapse; /*合并外边线*/
+}
+
+
+body {
+    font: 12px/150% "microsoft yahei";
+    color: #666;
+    background: #F6F6F6;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+
+a {
+    color: #666a74;
+    text-decoration: none;
+}
+
+a:hover {
+    color: coral;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+s,
+i,
+em {
+    font-style: normal;
+    text-decoration: none;
+}
+body{
+    /*background-color: white;*/
+}
+.w{
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+.Top-main{
+    position: relative;
+}
+
+/*左上样式设置*/
+.Top-main-top-nav{
+      height: 50px;
+    font-size: 12px;
+    line-height: 50px;
+}
+.Top-main-top-nav:first-child{
+    padding-left: 73px;
+}
+.Top-main-top-nav>span{
+    margin-left: 8px;
+}
+/*左边DIV样式设置*/
+.Top-main-left{
+    margin-left: 73px;
+    float: left;
+
+}
+.shopping-guide{
+    width: 177px;
+    height: 34px;
+    font-weight: 700;
+    background-color: #e5e5e5;
+    border: 1px solid #c0c0c0;
+
+}
+.shopping-guide>p{
+    line-height: 34px;
+    font-size: 14px;
+    text-align: center;
+}
+.Top-main-left-one>.guide{
+    width: 177px;
+    border: 1px solid #c0c0c0;
+}
+.Top-main-left-one>.guide>span{
+     display:block;
+    padding-left: 30px;
+    line-height: 38px;
+    font-weight: 700;
+
+}
+/*右边DIV样式设置*/
+.Top-main-right{
+    width: 880px;
+    border: 1px solid #c0c0c0;
+    position: relative;
+    float: right;
+    /*top: 48px;*/
+    /*right: 74px;*/
+
+}
+.Top-main-right-top{
+    width: 800px;
+    height: 73px;
+
+    margin-left: 26px;
+    border-bottom: dashed 1px #c5c5c5;
+}
+
+.Top-main-right-top img{
+    height: 25px;
+    width: 290px;
+    padding-top: 24px;
+
+}
+.Top-main-right-center{
+    width: 748px;
+    padding-left: 54px;
+}
+.Top-main-right-center h2{
+    font-weight: 700;
+    line-height: 46px;
+    margin-bottom: 13px;
+}
+.Top-main-right-center span{
+    font-size: 14px;
+    line-height: 14px;
+}
+.Top-main-right-center p{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 75px;
+}
+.Top-main-right-pic img{
+    padding-left: 54px;
+    margin-top: 45px;
+}
+.Top-main-right-pic a{
+    display: inline-block;
+    padding-left: 54px ;
+    margin-top: 25px;
+    margin-bottom: 63px;
+}
+.Top-main-right-pic-bottom{
+    width: 748px;
+    padding-left: 54px;
+    margin-bottom: 23px;
+}
+.Top-main-right-pic-bottom h2{
+    font-weight: 700;
+
+}
+.Top-main-right-pic-bottom p{
+    line-height: 67px;
+    font-weight: 700;
+}
+.Top-main-right-pic-bottom-change{
+    padding-left: 54px;
+}
+.Top-main-right-pic-bottom-change-text{
+    padding-left: 54px;
+
+}
+.Top-main-right-pic-bottom-change-text p{
+    line-height: 50px;
+    font-size: 14px;
+}
+.Top-main-right-pic-bottom-change-text-spi p:first-child {
+    font-weight: 700;
+}
+.Top-main-right-pic-bottom-change-text-spi .current{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.weight{
+    font-weight: 700;
+}
+.Top-main-right-pic-bottom-change-text-spi a{
+    color: blue;
+
+}
+.Top-main-right-pic-bottom-change-text-spi p:last-child{
+    margin-bottom: 100px;
+}
+.main-bottom {
+    float: left;
+    width: 100%;
+   margin-top: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid darkgray;
+    border-top: 1px solid darkgray;
+}
+.main-bottom img{
+    padding-left: 100px;;
+}
+.main-bottom a{
+    font-size: 16px;
+    color: black;
+}
+.main-bottom a:hover{
+    text-decoration: underline;
+}
+.spans{
+    font-size: 15px;
+    float: left;
+}
+.spans span{
+    padding-left:150px;
+}
+/*底部样式
+/* slogan-container的开始  */
+.slogan-container {
+    margin-top: 100px;
+    height:80px;
+    text-align: center;
+    border-top: 1px solid #fafafa;
+    border-bottom: 1px solid #fafafa;
+}
+.slogan-container  ul li {
+    float:left;
+    width: 300px;
+    height: 44px;
+    line-height: 44px;
+    margin-top: 20px;
+}
+
+.slogan-container ul li a i{
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+.slogan-container ul li a{
+    font-size: 14px;
+}
+.one i {
+    background:transparent url(../img/20160226162651249.png) scroll no-repeat -216px 0;
+}
+.two i {
+    background:transparent url(../img/20160226162651249.png) scroll no-repeat -270px 0;
+}
+.three i {
+    background:transparent url(../img/20160226162651249.png) scroll no-repeat -324px 0;
+}
+.four i {
+    background:transparent url(../img/20160226162651249.png) scroll no-repeat -378px 0;
+}
+.slogan-container ul li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+.slogan-container ul li a:hover .one i {
+    background-position: 0 0;
+}
+
+
+
+/* server-conttainer的开始 */
+.server-container {
+    height:230px;
+    /* background-color: pink; */
+    border-bottom: 1px solid #fafafa;
+}
+.server {
+    padding-top:30px;
+}
+.server dl {
+    float:left;
+    width: 265px;
+    height: 132px;
+    margin-left: 30px;
+}
+.server .s5 {
+    width:114px;
+}
+.server i {
+    float: left;
+    width: 16px;
+    height: 14px;
+    margin: 3px 8px 0 0;
+}
+.server dl dd ul li a{
+    padding-left: 24px;
+    font-size: 12px;
+    color: #b4b4b4;
+}
+.server dl dt {
+    margin-bottom: 15px;
+    color: #666666;
+}
+.server dt i{
+    background: transparent url(../imgs/icon14.png) scroll no-repeat ;
+}
+.s1 dt i {
+    background-position: 0 -54px;
+}
+.s2 dt i {
+    background-position: -26px -54px;
+}
+.s3 dt i {
+    background-position: -52px -54px;
+}
+.s4 dt i {
+    background-position: -78px -54px;
+}
+.s5 dt i {
+    background-position: 0 -78px;
+}
+/* footer的开始 */
+.footer-container {
+    height: 180px;
+    font-size: 12px;
+    float: left;
+}
+.footer {
+    padding: 30px 0 30px;
+    margin-left: 150px;
+}
+.footer-other {
+    padding: 0 8px;
+    text-align: center;
+    color: #888
+}
+.footer p {
+    text-align: center;
+    line-height: 1.5;
+}
+.copyright .img {
+    margin-top: 18px;
+}

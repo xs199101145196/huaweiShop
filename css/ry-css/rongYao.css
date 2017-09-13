@@ -1,0 +1,1216 @@
+
+/*topNav开始*/
+
+.topNav{
+    height: 42px;
+    background-color: #00b5e2;
+    position: relative;
+    border-top: 1px solid #eaeaea;
+}
+.topNav_left{
+    width: 300px;
+    line-height: 40px;
+    position: absolute;
+    left:0px;
+    border-right:1px solid red;
+    border-left:1px solid #30c0e5;
+}
+.topNav_left img{
+    position: absolute;
+    left: 56px;
+    top: 7px;
+}
+.topNav_left span{
+    position: absolute;
+    left: 172px;
+    font-size: 18px;
+    color: #fff;
+
+}
+.topNav_right{
+    line-height: 40px;
+    position: absolute;
+    right: 74px;
+
+}
+.topNav_right li{
+    width: 140px;
+    height: 42px;
+    float: left;
+    font-size: 18px;
+    color: #fff;
+    border-right:1px solid #30c0e5;
+    text-align: center;
+}
+.topNav_right li.current{
+    /*background-color: #00a3cb;*/
+/*background-color: red;*/
+}
+
+/*topNav结束*/
+/*下拉内容*/
+.xiala{
+    position: absolute;
+    left: 75px;
+    top: 233px;
+    width: 1200px;
+    height: 290px;
+    background-color:#fff;
+    display:none;
+    z-index: 1;
+}
+.xiala.current{
+    /*display:block;*/
+
+}
+.xiala .xiala_top{
+    height: 70px;
+    line-height: 70px;
+    color: #000;
+}
+.xiala .xiala_top ul {
+    position: absolute;
+    left: 50px;
+}
+.xiala .xiala_top li{
+    margin-left: 16px;
+    float: left;
+}
+.xiala .xiala_top a{
+    color: #000;
+}
+.xiala .xiala_bottom{
+    /*position: absolute;*/
+    height: 219px;
+    border-top: 1px solid #eeeded;
+}
+.xiala_bottom ul{
+    position: absolute;
+    left: 35px;
+}
+.xiala .xiala_bottom li{
+    /*position: absolute;*/
+    float: left;
+    /*margin-left: 10px;*/
+    text-align: center;
+    width: 166px;
+    height: 220px;
+}
+.xiala_bottom li a{
+    width: 166px;
+    height: 220px;
+}
+.xiala_bottom li a:hover{
+    color: #00b5e2;
+}
+.xiala_bottom li img{
+    /*top: 25px;*/
+    /*left: 23px;*/
+    margin-top: 24px;
+    width: 120px;
+    height: 120px;
+    
+}
+.xiala_bottom li .bc{
+    margin-top: 18px;
+    color: #000;
+}
+.xiala_bottom li .bb{
+    margin-top: 2px;
+    color: #00b5e2;
+}
+/*下拉内容*/
+
+/*轮播图*/
+.screen_pic img{
+    display: block;
+    /*设置为块元素：目的是让图片跟股容器一样大（块元素才可以设置宽高）  */
+}
+/*设置总体大小*/
+.box{
+    /*width: 100%;*/
+    height: 450px;
+    position: relative;
+
+}
+/* 轮播的大容器 */
+.screen{
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    /*position: relative;*/
+}
+.screen_pic{
+    width:100%;
+    height: 450px;
+    /*overflow: hidden;*/
+    position: relative;
+}
+
+/* 轮播里的图片列表，设置宽度足够大，因为不大的话，无法一行放下所有图片  */
+.screen ul{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 1000%;
+    height:450px;
+}
+/*左浮，才能让图片都在同一行  */
+.screen_pic li {
+    float: left;
+    /*height: 450px;*/
+}
+/*设置导航（页码按钮  */
+.screen_index{
+    position: absolute;
+    right: 500px;
+    bottom: 14px;
+}
+
+.screen_index span {
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+    width: 26px;
+    height: 4px;
+    background:rgba(255,255,255,0.1);
+    cursor: pointer;
+    border-radius: 15%;
+}
+/*让被点击（被选中）的页码按钮变色  */
+.screen_index span.current {
+    background:rgba(255,255,255,0.5);
+
+}
+/*轮播图结束*/
+
+/*荣耀精品开始*/
+.jp{
+    position: relative;
+    top:40px;
+    left: 0px;
+    width: 1200px;
+    height: 688px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.3);
+
+}
+.jp .sb{
+    height: 35px;
+    width: 9px;
+    background-color: #00b5e2;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    border-radius: 15%;
+    
+}
+.jp .jp_txt{
+    font: bold 24px "微软雅黑";
+    color: #000;
+    position: absolute;
+    top: 30px;
+    left: 44px;
+
+}
+/*上ul*/
+.jp .ul1{
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    background-color: #f5f6f8;
+    width: 1153px;
+    height: 380px;
+
+}
+.jp .ul1 li{
+    float: left;
+    border: 1px solid #dddddd;
+    width: 250px;
+    height:342px;
+    padding-left: 36px;
+    padding-top: 38px;
+    /*box-shadow: 10px 10px 40px rgba(0,0,0,0.2);*/
+    text-align: center;
+}
+.jp .ul1 li:hover{
+    /*box-shadow: 10px 10px 40px rgba(0,0,0,0.2);*/
+    -webkit-box-shadow:
+    -5px 0 40px #cecece inset,
+    5px 0  40px  #cecece inset,
+    0 -5px 40px #cecece inset,
+    0 5px  40px #cecece inset;
+}
+.jp .ul1 a{
+    color: #000;
+}
+.jp .ul1 a img{
+    width: 190px;
+    height: 200px;
+}
+.jp .ul1 a .ul_txt1{
+    margin-top: 20px;
+    display: block;
+    font-size: 20px;
+}
+.jp .ul1 a .ul_txt2{
+    /*margin-top: 12px;*/
+    display: block;
+    color: #a4a4c2;
+}
+.jp .ul1 a .ul_txt3{
+    /*margin-top: 18px;*/
+    display: block;
+    color: #00c1ef;
+}
+
+/*上ul*/
+/*下ul*/
+.ul2{
+    position: absolute;
+    bottom: 18px;
+    left: 20px;
+    margin-top: 20px;
+    background-color: #f5f6f8;
+
+}
+.ul2 li{
+    float: left;
+    border: 1px solid #dddddd;
+}
+/*下ul*/
+/*荣耀精品结束*/
+
+/*手机专区样式*/
+.MoblieArea{
+    /*background-color: pink;*/
+    position: relative;
+}
+.Moblie-FirstArea{
+    height: 660px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.2);
+
+}
+.Moblie-FirstArea-nav{
+    height: 78px;
+    margin: 0 auto;
+    line-height: 78px;
+}
+
+.Moblie-FirstArea-nav a:hover{
+    color: skyblue;
+}
+.spcial{
+    height: 40px;
+    width: 10px;
+    background-color: #00b5e2;
+    position:absolute;
+    top: 20px;
+    left: 22px;
+}
+.Moblie-FirstArea-nav span{
+    font-size: 20px;
+    padding-right: 26px;
+}
+.Moblie-FirstArea-nav a{
+    color: #a4a4a4;
+}
+.Moblie-FirstArea-nav .first-one{
+    font-size: 25px;
+    color: black;
+    padding-left: 47px;
+    margin-right: 57px;
+}
+
+.Moblie-FirstArea-nav .last-one{
+    color: black;
+    margin-left: 600px;
+}
+/*图片样式*/
+.honour-left{
+    height: 540px;
+    width: 380px;
+    background:url("../../img/1500387690124.jpg")no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    left: 20px;
+    border-radius: 10px;
+}
+.honour-left:hover{
+    -webkit-box-shadow:-5px 0 40px #cecece inset,
+    5px 0  40px  #cecece inset,
+    0 -5px 40px #cecece inset,
+    0 5px  40px #cecece inset;
+
+}
+
+/*中上左图片样式*/
+.center-top-left{
+    background-color: #f5f6f8;
+    width: 370px;
+    height: 257px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    position: absolute;
+    top: 78px;
+    left: 420px;
+}
+.center-top-left:hover{
+    -webkit-box-shadow:-5px 0 40px #cecece inset,
+    5px 0 40px  #cecece inset,
+    0 -5px 40px #cecece inset,
+    0 5px  40px #cecece inset;
+    cursor: pointer;
+
+}
+.one{
+    font-size: 22px;
+    color: black;
+    position: absolute;
+    top: 90px;
+}
+.two{
+    font-size: 16px;
+    color: #969896;
+    position: absolute;
+    top: 120px;
+}
+.three{
+    font-size: 14px;
+    color: skyblue;
+    position: absolute;
+    top: 160px;
+}
+
+.center-top-left img{
+    padding-top: 30px;
+}
+/*中上右图片样式*/
+.center-top-right{
+    background-color: #f5f6f8;
+    width: 370px;
+    height: 257px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    position: absolute;
+    top: 78px;
+    right:30px;
+}
+
+.center-top-right:hover{
+    -webkit-box-shadow:-5px 0 40px #cecece inset,
+    5px 0  40px  #cecece inset,
+    0 -5px 40px #cecece inset,
+    0 5px  40px #cecece inset;
+    cursor: pointer;
+}
+.one{
+    font-size: 22px;
+    color: black;
+    position: absolute;
+    top: 90px;
+}
+.two{
+    font-size: 16px;
+    color: #969896;
+    position: absolute;
+    top: 120px;
+}
+.three{
+    font-size: 14px;
+    color: skyblue;
+    position: absolute;
+    top: 160px;
+}
+
+.center-top-right img{
+    padding-top: 30px;
+}
+/*中下左图片样式*/
+.center-bottom-left{
+    background-color: #f5f6f8;
+    width: 370px;
+    height: 257px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    position: absolute;
+    top: 358px;
+    left:420px;
+}
+.center-bottom-left:hover{
+    -webkit-box-shadow:-5px 0 40px #cecece inset,
+    5px 0  40px  #cecece inset,
+    0 -5px 40px #cecece inset,
+    0 5px  40px #cecece inset;
+    cursor: pointer;
+}
+.one{
+    font-size: 22px;
+    color: black;
+    position: absolute;
+    top: 90px;
+}
+.two{
+    font-size: 16px;
+    color: #969896;
+    position: absolute;
+    top: 120px;
+}
+.three{
+    font-size: 14px;
+    color: skyblue;
+    position: absolute;
+    top: 160px;
+}
+
+.center-bottom-left img{
+    padding-top: 30px;
+}
+/*中右下图片样式*/
+.center-bottom-right{
+    background-color: #f5f6f8;
+    width: 370px;
+    height: 257px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    position: absolute;
+    top: 358px;
+    right:30px;
+}
+.center-bottom-right:hover{
+    -webkit-box-shadow:-5px 0 40px #cecece inset,
+    5px 0  40px  #cecece inset,
+    0 -5px 40px #cecece inset,
+    0 5px  40px #cecece inset;
+    cursor: pointer;
+}
+.one{
+    font-size: 22px;
+    color: black;
+    position: absolute;
+    top: 90px;
+}
+.two{
+    font-size: 16px;
+    color: #969896;
+    position: absolute;
+    top: 120px;
+}
+.three{
+    font-size: 14px;
+    color: skyblue;
+    position: absolute;
+    top: 160px;
+}
+
+.center-bottom-right img{
+    padding-top: 30px;
+}
+/*精品电脑专区*/
+.Moblie-SecondArea{
+    background-color: white;
+    position: relative;
+    height: 725px;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.2);
+
+}
+.Moblie-SecondArea-Nav{
+    height: 78px;
+    margin: 0 auto;
+    line-height: 78px;
+}
+
+.Moblie-SecondArea-Nav a:hover{
+    color: skyblue;
+}
+.Moblie-SecondArea >.spcial{
+    height: 40px;
+    width: 10px;
+    background-color: #00b5e2;
+    position:absolute;
+    top: 20px;
+    left: 22px;
+}
+.Moblie-SecondArea-Nav span{
+    font-size: 20px;
+    padding-right: 26px;
+}
+.Moblie-SecondArea-Nav a{
+    color: #a4a4a4;
+}
+.Moblie-SecondArea-Nav .first-one{
+    font-size: 25px;
+    color: black;
+    padding-left: 47px;
+    margin-right: 57px;
+}
+
+.Moblie-SecondArea-Nav .last-one{
+    color: black;
+    margin-left: 750px;
+}
+/*图片样式*/
+.pad-left{
+    height:627px;
+    width: 380px;
+    background:url("../../img/1498832745632.jpg")no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    left: 20px;
+    border-radius: 10px;
+}
+.pad-left:hover{
+    -webkit-box-shadow:-5px 0 50px #cecece inset,
+    5px 0  50px  #cecece inset,
+    0 -5px 50px #cecece inset,
+    0 5px  50px #cecece inset;
+
+}
+/*中上左图片样式*/
+.Moblie-SecondArea .center-top-left{
+    /*background-color: #f5f6f8;*/
+    background: url("../../img/1497496689486.jpg")no-repeat;
+    background-size: 100% 100%;
+    width: 370px;
+    height: 300px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    position: absolute;
+    top: 78px;
+    left: 420px;
+}
+.Moblie-SecondArea .center-top-left:hover{
+    -webkit-box-shadow:-5px 0 40px #cecece inset,
+    5px 0 40px  #cecece inset,
+    0 -5px 40px #cecece inset,
+    0 5px  40px #cecece inset;
+    cursor: pointer;
+
+}
+.Moblie-SecondArea .one{
+    font-size: 22px;
+    color: black;
+    position: absolute;
+    top: 90px;
+}
+.Moblie-SecondArea .two{
+    font-size: 16px;
+    color: #969896;
+    position: absolute;
+    top: 120px;
+}
+.Moblie-SecondArea .three{
+    font-size: 14px;
+    color: skyblue;
+    position: absolute;
+    top: 160px;
+}
+
+.center-top-left img{
+    padding-top: 30px;
+}
+/*中上右图片样式*/
+.Moblie-SecondArea .center-top-right{
+    background: url("../../img/1495588976302.jpg")no-repeat;
+    background-size: 100% 100%;
+    width: 370px;
+    height: 300px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    position: absolute;
+    top: 78px;
+    right:30px;
+}
+
+.center-top-right:hover{
+    -webkit-box-shadow:-5px 0 40px #cecece inset,
+    5px 0  40px  #cecece inset,
+    0 -5px 40px #cecece inset,
+    0 5px  40px #cecece inset;
+    cursor: pointer;
+}
+.Moblie-SecondArea .one{
+    font-size: 22px;
+    color: black;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+.Moblie-SecondArea .two{
+    font-size: 16px;
+    color: #969896;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+}
+.Moblie-SecondArea .three{
+    font-size: 14px;
+    color: skyblue;
+    position: absolute;
+    top: 110px;
+    left: 20px;
+}
+
+.center-top-right img{
+    padding-top: 30px;
+}
+/*底下图片样式*/
+.Moblie-SecondArea .center-bottom-pad-left{
+    background:url("../../img/1496248127369.jpg")no-repeat;
+    background-size: 100% 100%;
+    width: 750px;
+    height: 300px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    position: absolute;
+    top: 405px;
+    left:420px;
+}
+.Moblie-SecondArea .center-bottom-pad-left:hover{
+    -webkit-box-shadow:-5px 0 40px #cecece inset,
+    5px 0  40px  #cecece inset,
+    0 -5px 40px #cecece inset,
+    0 5px  40px #cecece inset;
+    cursor: pointer;
+}
+.Moblie-SecondArea .one{
+    font-size: 22px;
+    color: black;
+    position: absolute;
+    top: 90px;
+}
+.Moblie-SecondArea .two{
+    font-size: 16px;
+    color: #969896;
+    position: absolute;
+    top: 120px;
+}
+.Moblie-SecondArea .three{
+    font-size: 14px;
+    color: skyblue;
+    position: absolute;
+    top: 160px;
+}
+.center-bottom-pad-left .one{
+    font-size: 22px;
+    color: black;
+    position: absolute;
+    top: 50px;
+}
+.center-bottom-pad-left .two{
+    font-size: 16px;
+    color: #969896;
+    position: absolute;
+    top: 80px;
+}
+.center-bottom-pad-left .three{
+    font-size: 14px;
+    color: skyblue;
+    position: absolute;
+    top: 120px;
+}
+/*智能穿戴专区*/
+.Moblie-ThreeArea{
+    background-color: white;
+    position: relative;
+    height: 725px;
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.2);
+
+}
+.Moblie-ThreeArea-Nav{
+    height: 78px;
+    margin: 0 auto;
+    line-height: 78px;
+}
+
+.Moblie-ThreeArea-Nav a:hover{
+    color: skyblue;
+}
+.Moblie-ThreeArea >.spcial{
+    height: 40px;
+    width: 10px;
+    background-color: #00b5e2;
+    position:absolute;
+    top: 20px;
+    left: 22px;
+}
+.Moblie-ThreeArea-Nav span{
+    font-size: 20px;
+    padding-right: 26px;
+}
+.Moblie-ThreeArea-Nav a{
+    color: #a4a4a4;
+}
+.Moblie-ThreeArea-Nav .first-one{
+    font-size: 25px;
+    color: black;
+    padding-left: 47px;
+    margin-right: 57px;
+}
+
+.Moblie-ThreeArea-Nav .last-one{
+    color: black;
+    margin-left: 750px;
+}
+/*图片样式*/
+.Technology-left{
+    height:627px;
+    width: 380px;
+    background:url("../../img/1497264973736.jpg")no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    left: 20px;
+    border-radius: 10px;
+}
+.Technology-left:hover{
+    -webkit-box-shadow:-5px 0 50px #cecece inset,
+    5px 0  50px  #cecece inset,
+    0 -5px 50px #cecece inset,
+    0 5px  50px #cecece inset;
+
+}
+/*中上左图片样式*/
+.Moblie-ThreeArea .center-top-left{
+    /*background-color: #f5f6f8;*/
+    background: url("../../img/1500342059148.jpg")no-repeat;
+    background-size: 100% 100%;
+    width: 370px;
+    height: 300px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    position: absolute;
+    top: 78px;
+    left: 420px;
+}
+.Moblie-ThreeArea .center-top-left:hover{
+    -webkit-box-shadow:-5px 0 40px #cecece inset,
+    5px 0 40px  #cecece inset,
+    0 -5px 40px #cecece inset,
+    0 5px  40px #cecece inset;
+    cursor: pointer;
+
+}
+.Moblie-ThreeArea .one{
+    font-size: 22px;
+    color: black;
+    position: absolute;
+    top: 90px;
+}
+.Moblie-ThreeArea .two{
+    font-size: 16px;
+    color: #969896;
+    position: absolute;
+    top: 120px;
+}
+.Moblie-ThreeArea .three{
+    font-size: 14px;
+    color: skyblue;
+    position: absolute;
+    top: 160px;
+}
+
+.Moblie-ThreeArea img{
+    padding-top: 30px;
+}
+/*中上右图片样式*/
+.Moblie-ThreeArea .center-top-right{
+    background: url("../../img/honor_shouhuan_zero.jpg")no-repeat;
+    background-size: 100% 100%;
+    width: 370px;
+    height: 300px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    position: absolute;
+    top: 78px;
+    right:30px;
+}
+
+/*.Moblie-ThreeArea:hover{*/
+/*-webkit-box-shadow:-5px 0 40px #cecece inset,*/
+/*5px 0  40px  #cecece inset,*/
+/*0 -5px 40px #cecece inset,*/
+/*0 5px  40px #cecece inset;*/
+/*cursor: pointer;*/
+/*}*/
+.Moblie-ThreeArea .one{
+    font-size: 22px;
+    color: black;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+.Moblie-ThreeArea .two{
+    font-size: 16px;
+    color: #969896;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+}
+.Moblie-ThreeArea .three{
+    font-size: 14px;
+    color: skyblue;
+    position: absolute;
+    top: 110px;
+    left: 20px;
+}
+
+.center-top-right img{
+    padding-top: 30px;
+}
+/*底下图片样式*/
+.Moblie-ThreeArea .center-bottom-pad-left{
+    background:url("../../img/honor_sh_zero_SS.jpg")no-repeat;
+    background-size: 100% 100%;
+    width: 750px;
+    height: 300px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    position: absolute;
+    top: 405px;
+    left:420px;
+}
+.Moblie-ThreeArea .center-bottom-pad-left:hover{
+    -webkit-box-shadow:-5px 0 40px #cecece inset,
+    5px 0  40px  #cecece inset,
+    0 -5px 40px #cecece inset,
+    0 5px  40px #cecece inset;
+    cursor: pointer;
+}
+.Moblie-ThreeArea .one{
+    font-size: 22px;
+    color: black;
+    position: absolute;
+    top: 90px;
+}
+.Moblie-ThreeArea .two{
+    font-size: 16px;
+    color: #969896;
+    position: absolute;
+    top: 120px;
+}
+.Moblie-ThreeArea .three{
+    font-size: 14px;
+    color: skyblue;
+    position: absolute;
+    top: 160px;
+}
+.center-bottom-pad-left .one{
+    font-size: 22px;
+    color: black;
+    position: absolute;
+    top: 50px;
+}
+.center-bottom-pad-left .two{
+    font-size: 16px;
+    color: #969896;
+    position: absolute;
+    top: 80px;
+}
+.center-bottom-pad-left .three{
+    font-size: 14px;
+    color: skyblue;
+    position: absolute;
+    top: 120px;
+}
+
+/*00000000000000000000000*/
+.smart-home .w{
+    /*background-color: pink;*/
+    overflow: hidden;
+    /*width: 1160px;*/
+    margin: 0 auto;
+    padding-top: 18px;
+    height:676px;
+    border-left: 20px solid white;
+    border-right: 20px solid white;
+    border-bottom: 18px solid white;
+    background-color: white;
+    border-radius: 10px;
+
+}
+.top {
+    width: 1160px;
+    height:38px;
+    margin: 0 auto 12px;
+
+}
+.top h2 {
+    float:left;
+    width: 118px;
+    height:36px;
+    text-align: center;
+    line-height: 36px;
+}
+.top h2 a {
+    margin-left: 10px;
+    font-size: 24px;
+}
+h2 span {
+    background-color: #29badf;
+    float: left;
+    width: 8px;
+    height: 34px;
+    line-height: 36px;
+    border-radius: 3px;
+}
+.top ul {
+    float: left;
+    margin-left: 40px;
+}
+.top ul li{
+    float: left;
+    line-height: 36px;
+    margin-right: 15px;
+}
+.top ul li a {
+    font-size: 18px;
+    color:#a7a4a4;
+}
+.top ul li a:hover{
+    color:deepskyblue;
+}
+.top-right {
+    float:right;
+    line-height: 36px;
+}
+.top-right a {
+    font-size: 18px;
+}
+.top-right i {
+    float:right;
+    width:20px;
+    height:20px;
+    background:url(../../img/icon-honor.png) no-repeat 0 0;
+    margin-top: 8px;
+}
+.top-right a:hover i{
+    background:url(../../img/icon-honor.png) no-repeat 0px -20px;
+}
+.bottom {
+    width: 1160px;
+    margin: 0 auto;
+}
+.bottom .bt-left {
+    float:left;
+    border-radius: 5px;
+}
+.bottom .bt-right  .honor-Pro{
+    float:left;
+    margin-left: 20px;
+    width:410px;
+    height:294px;
+    background: url(../../img/honor_Pro.png);
+    position: relative;
+    border-radius: 5px;
+}
+.bottom .honor-Pro .disc-pro {
+    width:410px;
+    height:78px;
+    position: absolute;
+    bottom:0;
+    left:0;
+    font-size: 18px;
+    background-color: #333;
+    opacity: .5;
+    color: white;
+}
+.bottom .honor-Pro .disc-pro span {
+    float:left;
+    width:390px;
+    height: 39px;
+    line-height: 39px;
+    margin-left: 20px;
+}
+/*------------------*/
+.bottom .bt-right  .honor-wifi{
+    float:left;
+    margin-left: 430px;
+    width:410px;
+    height:294px;
+    background: url(../../img/honor_wifibzb.jpg);
+    position: relative;
+    border-radius: 5px;
+}
+.bottom .honor-wifi .disc-wifi {
+    width:410px;
+    height:78px;
+    position: absolute;
+    bottom:0;
+    left:0;
+    font-size: 18px;
+    background-color: #333;
+    opacity: .5;
+    color: white;
+}
+.bottom .honor-wifi .disc-wifi span {
+    float:left;
+    width:390px;
+    height: 39px;
+    line-height: 39px;
+    margin-left: 20px;
+}
+.bottom .bt-right  .honor-Pro .disc-pro:hover{
+    background-color: #29badf;
+}
+.bottom .honor-wifi .disc-wifi:hover {
+    background-color: #29badf;
+}
+.bottom ul {
+    float:left;
+    width:840px;
+}
+.bottom ul li {
+    float:left;
+}
+.voice {
+    float:left;
+    width:264px;
+    height:292px;
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+    border:1px solid #ccc;
+    border-radius: 5px;
+}
+.voice .voicebig {
+    margin-top: 20px;
+}
+.voice .tehui {
+    position: absolute;
+    top:125px;
+    left:170px;
+}
+.voice div {
+    width: 264px;
+    height:100px;
+    position: absolute;
+    bottom: 0px;
+}
+.voice div .one1 {
+    font-size: 18px;
+    line-height: 40px;
+}
+.voice div .two1,.three1 {
+    font-size: 14px;
+    line-height: 25px;
+}
+.two1 {
+    color:#a7a4a4;
+}
+.wifi-pro {
+    float:left;
+    width:264px;
+    height:292px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+    position: relative;
+    border:1px solid #ccc;
+    border-radius: 5px;
+}
+.wifi-pro .voicebig {
+    margin-top: 20px;
+}
+.wifi-pro .tehui {
+    position: absolute;
+    top:125px;
+    left:170px;
+}
+.wifi-pro div {
+    width: 264px;
+    height:100px;
+    position: absolute;
+    bottom: 0px;
+}
+.wifi-pro div .one1 {
+    font-size: 18px;
+    line-height: 40px;
+}
+.wifi-pro div .two1,.three1 {
+    font-size: 14px;
+    line-height: 25px;
+}
+.cqq {
+    float:left;
+    width:264px;
+    height:292px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+    position: relative;
+    border:1px solid #ccc;
+    border-radius: 5px;
+}
+.cqq .voicebig {
+    margin-top: 20px;
+}
+.cqq .tehui {
+    position: absolute;
+    top:125px;
+    left:170px;
+}
+.cqq div {
+    width: 264px;
+    height:100px;
+    position: absolute;
+    bottom: 0px;
+}
+.cqq div .one1 {
+    font-size: 18px;
+    line-height: 40px;
+}
+.cqq div .two,.three1 {
+    font-size: 14px;
+    line-height: 25px;
+}
+.bottom ul li a .one1{
+    color: black;
+}
+.bottom ul li a:hover{
+    color:black;
+}
+
+.bottom ul li:hover {
+    -webkit-box-shadow:-5px 0 40px #cecece inset,
+    5px 0  40px  #cecece inset,
+    0 -5px 40px #cecece inset,
+    0 5px  40px #cecece inset;
+}
+.bottom ul li .three1 {
+    color:skyblue;
+}
+.kdiv {
+    height:38px;
+}
+
+.bottom .bt-right .tzc {
+    background: url(../../img/cheng.jpg);
+}
+.bottom .bt-right .tkjl {
+    background: url(../../img/tkjl.jpg);
+}
+.sf,.xp {
+    position: absolute;
+    right:25px;
+    bottom:85px;
+}
+.honor-Pro,.honor-wifi :hover {
+    cursor: pointer;
+}
+
+/*more页面css*/
+/*首页文字*/
+.in_txt{
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    background-color: red;
+}
+/*首页文字*/
+/*more页面css*/

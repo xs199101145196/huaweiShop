@@ -1,0 +1,615 @@
+.fl{
+    float: left;
+}
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+.body {
+    background-color: #f5f5f5;
+}
+.content .main-Banner{
+    width: 100%;
+    height: 450px;
+    /*overflow: hidden;*/
+    position: relative;
+}
+.content .main-Banner ul.pic {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+.content .main-Banner li {
+    width: 100%;
+    height: 450px;
+    /*float: left;*/
+}
+.content .main-Banner ul.pic li.current a.banner-one{
+    z-index: 2;
+}
+.content .main-Banner li a.banner-one,
+.content .main-Banner li a.banner-two,
+.content .main-Banner li a.banner-three,
+.content .main-Banner li a.banner-four,
+.content .main-Banner li a.banner-five,
+.content .main-Banner li a.banner-six
+{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.content .main-Banner li a.banner-one{
+    background: url("../images/轮播-2.jpg") no-repeat center top;
+}
+.content .main-Banner li a.banner-two{
+    background: url("../images/轮播-1.jpg") no-repeat center top;
+}
+.content .main-Banner li a.banner-three{
+    background: url("../images/轮播-3.jpg") no-repeat center top;
+}
+.content .main-Banner li a.banner-four{
+    background: url("../images/轮播-4.jpg") no-repeat center top;
+}
+.content .main-Banner li a.banner-five{
+    background: url("../images/轮播-5.jpg") no-repeat center top;
+}
+.content .main-Banner li a.banner-six{
+    background: url("../images/轮播-6.jpg") no-repeat center top;
+}
+
+/*滚动圆点*/
+.content .main-Banner ul.round {
+    width: 130px;
+    height: 20px;
+    /*background-color: black;*/
+    position: absolute;
+    top: 420px;
+    left: 50%;
+    margin-left: -65px;
+    z-index: 30;
+}
+.content .main-Banner ul.round li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    /*background-color: #fff;*/
+    margin-right: 8px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.content .main-Banner ul.round li:last-Child{
+     margin-right: 0px;
+ }
+.content .main-Banner ul.round li.color{
+    background-color: #fff;
+}
+
+/*服务栏-S*/
+.content .service{
+    width: 1200px;
+    height: 97px;
+    background-color: #fff;
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+.content .service .left {
+    width: 288px;
+    height: 74px;
+    /*background-color: pink;*/
+    border-right: 1px solid #eaeaea;
+    margin-top: 11px;
+    float: left;
+}
+.content .service .left .icon img{
+    width: 61px;
+    margin-left: 22px;
+    margin-top: 6px;
+    margin-right: 20px;
+    float: left;
+}
+.content .service .left .log{
+    margin-top:6px;
+}
+.content .service .left .log div.top {
+    font-size: 12px;
+    line-height: 14px;
+    width: 162px;
+    float: left;
+}
+.content .service .left .log div.top a {
+    text-decoration: underline;
+    color: black;
+}
+.content .service .left .log div.top a.log{
+    margin-right: 10px;
+}
+.content .service .left .log div.btn {
+    width: 135px;
+    float: left;
+    margin-top: 9px;
+}
+.content .service .left .log div.btn div{
+    width: 58px;
+    height: 18px;
+    border: 1px solid red;
+    float: left;
+    text-align: center;
+}
+.content .service .left .log div.btn div.new{
+    margin-right: 12px;
+}
+.content .service .left .log div.btn div.new:hover,
+.content .service .left .log div.btn div.privilege:hover
+{
+    background-color: red;
+}
+.content .service .left .log div.btn div.new a:hover,
+.content .service .left .log div.btn div.privilege a:hover
+{
+    color: #fff;
+}
+
+.content .service .middle{
+    width: 602px;
+    height: 74px;
+    /*background-color: yellow;*/
+    border-right: 1px solid #eaeaea;
+    float: left;
+    padding-top: 23px;
+}
+.content .service .middle ul li {
+    float: left;
+    width: 100px;
+    text-align: center;
+}
+.content .service .middle ul li img {
+    width: 34px;
+    display: block;
+    margin: 0 auto;
+}
+.content .service .right .top{
+    height: 48px;
+    float: left;
+}
+.content .service .right .top .notice {
+    width: 54px;
+    height: 48px;
+    float: left;
+    /*background-color: yellow;*/
+    text-align: center;
+    line-height: 48px;
+    border-bottom: 1px solid #eaeaea;
+}
+.content .service .right .top .notice a {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+}
+.content .service .right .top .sideBanner{
+    width: 238px;
+    height: 48px;
+    float: left;
+    /*background: pink;*/
+    border-bottom: 1px solid #eaeaea;
+    overflow: hidden;
+    position: relative;
+}
+.content .service .right .top .sideBanner ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.content .service .right .top .sideBanner li{
+    width: 238px;
+    height: 48px;
+    line-height: 48px;
+}
+.content .service .right .bottom{
+    width: 292px;
+    height: 48px;
+    float: left;
+}
+.content .service .right .bottom ul li {
+    float: left;
+}
+.content .service .right .bottom ul li a {
+    float: left;
+    width: 97px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+.content .promotion{
+    height: 160px;
+    margin-top: 12px;
+}
+.content .promotion ul li {
+    float: left;
+    margin-right: 12px;
+}
+.content .promotion ul li:hover{
+    box-shadow:0px 10px 20px 0px gray;
+}
+.content .promotion ul li:last-child{
+    margin-right: 0;
+}
+.content .promotion ul li img {
+    width: 291px;
+    height: 160px;
+}
+/*服务栏-E*/
+
+/*热销单品-S*/
+.hotGoods .t {
+    height: 54px;
+}
+.hotGoods .t h3 {
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 54px;
+}
+.hotGoods .b{
+    height: 590px;
+}
+.hotGoods .b .l{
+    width: 232px;
+}
+.hotGoods .b li:hover{
+    margin-top: -1px;
+    box-shadow:0px 5px 10px 0px gray;
+}
+.hotGoods .b li.forth:hover{
+    margin-top: -1px;
+    margin-bottom: 11px;
+    box-shadow:0px 5px 10px 0px gray;
+}
+.hotGoods .b .r{
+    width: 968px;
+    height: 600px;
+}
+.hotGoods .b .r ul li{
+    float: left;
+    width: 232px;
+    height: 290px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+.hotGoods .b .r ul li img{
+    display: block;
+    margin: 35px auto 0;
+    width: 142px;
+    height: 142px;
+}
+.hotGoods .b .r ul li .title{
+    width: 232px;
+    line-height: 14px;
+    font-size: 14px;
+    margin-top: 38px;
+    text-align: center;
+    color: #3a3a3a;
+}
+.hotGoods .b .r ul li .desc{
+    width: 232px;
+    line-height: 12px;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    color: #d3b8a4;
+}
+.hotGoods .b .r ul li .price{
+    width: 232px;
+    line-height: 12px;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    color: #cc0e11;
+}
+
+/*热销单品-E*/
+
+/*精品推荐-S*/
+.recommend-goods {
+    width: 1200px;
+    overflow: hidden;
+
+}
+.recommend-goods .h h3 {
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 54px;
+}
+.recommend-goods .b{
+    width: 1200px;
+    height: 290px;
+    background-color: #fff;
+    position: relative;
+}
+.recommend-goods .b .pic ul {
+    width: 2618px;
+    height: 290px;
+    /*position: relative;*/
+    /*top: 0;*/
+    /*left: 0;*/
+}
+.recommend-goods .b .pic ul li{
+    width: 217px;
+    height: 290px;
+    background-color: #fff;
+    float:left;
+    border-right: 1px solid #eaeaea;
+    margin-bottom: 25px;
+}
+.recommend-goods .b .pic ul li:hover{
+    margin-top: -1px;
+    box-shadow:0px 5px 10px 0px gray;
+}
+.recommend-goods .b .pic ul li img{
+    width: 142px;
+    height: 142px;
+    display: block;
+    margin: 39px auto 0;
+}
+.recommend-goods .b .pic ul li .title{
+    width: 217px;
+    line-height: 14px;
+    font-size: 14px;
+    margin-top: 38px;
+    text-align: center;
+    color: #3a3a3a;
+}
+.recommend-goods .b .pic ul li .desc{
+    width: 217px;
+    line-height: 12px;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    color: #d3b8a4;
+}
+.recommend-goods .b .pic ul li .price{
+    width: 217px;
+    line-height: 12px;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    color: #cc0e11;
+}
+.recommend-goods .b .arrow .a-left,
+.recommend-goods .b .arrow .a-right{
+    width: 21px;
+    height: 76px;
+    background-color: #bfbfbf;
+    opacity: 0.8;
+    position: absolute;
+    top: 50%;
+    margin-top: -38px;
+    cursor: pointer;
+    line-height: 76px;
+    font-weight: 900;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+.recommend-goods .b .arrow .a-left{
+    left: 0;
+}
+.recommend-goods .b .arrow .a-left:hover,
+.recommend-goods .b .arrow .a-right:hover{
+    background-color: gray;
+    opacity: 0.7;
+}
+.recommend-goods .b .arrow .a-right{
+    right: 0;
+}
+/*中部轮播图*/
+.subBanner {
+    width: 1200px;
+    height: 120px;
+    position: relative;
+}
+.subBanner .subBanner-pic img {
+    width: 1200px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.subBanner .subBanner-pic ul.round{
+    width: 60px;
+    height: 12px;
+    /*background-color: skyblue;*/
+    position: absolute;
+    bottom: 10px;
+    right: 122px;
+    z-index: 30;
+}
+.subBanner .subBanner-pic ul.round li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(200,200,200,.5);
+    float: left;
+    margin-right: 6px;
+    cursor: pointer;
+}
+.subBanner .subBanner-pic ul.round li:last-child{
+    margin-right: 0;
+}
+.subBanner .subBanner-pic ul.round li.color{
+    background-color: rgba(0,0,0,.5);
+}
+/*精品推荐-E*/
+
+/*手机介绍-S*/
+.phone,
+.laptop,
+.tablet-computer{
+    width: 1200px;
+    /*height: 700px;*/
+}
+.phone .h,
+.laptop .h,
+.tablet-computer .h{
+    width: 1200px;
+    height: 36px;
+    line-height: 36px;
+    margin: 17px 0;;
+    /*background-color: yellow;*/
+}
+.phone .h h3,
+.laptop .h h3,
+.tablet-computer .h h3{
+    display: inline-block;
+    font-size: 22px;
+    font-weight: normal;
+    float: left;
+    margin-right: 40px;
+}
+.phone .h ul li,
+.laptop .h ul li,
+.tablet-computer .h ul li{
+    float: left;
+    margin-right: 20px;
+}
+.phone .h ul li a:hover,
+.laptop .h ul li a:hover,
+.tablet-computer .h ul li a:hover{
+    border-bottom: 2px solid #C81623;
+    color: #C81623;
+}
+.phone .h ul li a,
+.laptop .h ul li a,
+.tablet-computer .h ul li a{
+    font-size: 16px;
+    color: #a4a4b0;
+    display: inline-block;
+    height: 36px;
+}
+.phone .h .more,
+.laptop .h .more,
+.tablet-computer .h .more{
+    float: right;
+    height: 36px;
+}
+.phone .h .more a,
+.laptop .h .more a,
+.tablet-computer .h .more a{
+    color: #666;
+    font-size: 17px;
+    margin-right: 20px;
+}
+.phone .b,
+.tablet-computer .b{
+    width: 1200px;
+    height: 704px;
+    /*background-color: yellow;*/
+}
+.phone .b ul li,
+.laptop .b ul li,
+.tablet-computer .b ul li{
+    width: 291px;
+    height: 346px;
+    float: left;
+    margin-right: 12px;
+    background-color: #fff;
+    margin-bottom: 12px;
+}
+.phone .b ul li:hover,
+.laptop .b ul li:hover,
+.tablet-computer .b ul li:hover{
+    margin-top: -1px;
+    box-shadow:0px 5px 10px 0px gray;
+}
+.phone .b ul li a,
+.laptop .b ul li a,
+.tablet-computer .b ul li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.phone .b ul li.p-four,
+.phone .b ul li:last-child,
+.laptop .b ul li:last-child,
+.tablet-computer .b ul li.p-four,
+.tablet-computer .b ul li:last-child{
+    margin-right: 0;
+}
+.phone .b ul li p,
+.laptop .b ul li p,
+.tablet-computer .b ul li p{
+    width: 100%;
+    text-align: center;
+}
+.phone .b ul li p.img,
+.laptop .b ul li p.img,
+.tablet-computer .b ul li p.img{
+    width: 160px;
+    /*height: 160px;*/
+    display: block;
+    margin: 42px auto 0;
+}
+.phone .b ul li p.title,
+.laptop .b ul li p.title,
+.tablet-computer .b ul li p.title{
+    margin-top: 54px;
+    line-height: 12px;
+    color: #3a3a3a;
+}
+.phone .b ul li p.desc,
+.laptop .b ul li p.desc,
+.tablet-computer .b ul li p.desc{
+    line-height: 29px;
+    color: #d3b8a4;
+}
+.phone .b ul li p.price,
+.laptop .b ul li p.price,
+.tablet-computer .b ul li p.price{
+    color: #cc0e11;
+}
+.phone .b ul li p img,
+.laptop .b ul li p img,
+.tablet-computer .b ul li p img{
+    height: 160px;
+}
+/*手机介绍-E*/
+
+/*笔记本-S 其余样式和Phone一致*/
+.laptop .b {
+    width: 1200px;
+    height: 346px;
+}
+/*笔记本-E*/
+.shiming {
+    width: 1200px;
+    height: 132px;
+}
+.shiming a img {
+    height: 120px;
+}
+
+/*返回顶部*/
+.goTop {
+    width: 40px;
+    height: 40px;
+    background-color: darkslategray;
+    opacity: 0.8;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 86px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    display: none;
+}
+.goTop i {
+    font-size: 20px;
+    color: #fff;
+}
+

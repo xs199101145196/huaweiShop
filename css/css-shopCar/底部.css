@@ -1,0 +1,119 @@
+/* slogan-container的开始  */
+.slogan-container {
+    margin-top: 100px;
+    height:80px;
+    text-align: center;
+    border-top: 1px solid #fafafa;
+    border-bottom: 1px solid #fafafa;
+}
+.slogan-container  ul li {
+    float:left;
+    width: 300px;
+    height: 44px;
+    line-height: 44px;
+    margin-top: 20px;
+}
+
+.slogan-container ul li a i{
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+.slogan-container ul li a{
+    font-size: 14px;
+}
+.one i {
+    background:transparent url(../imgs/icon14.png) scroll no-repeat -216px 0;
+}
+.two i {
+    background:transparent url(../imgs/icon14.png) scroll no-repeat -270px 0;
+}
+.three i {
+    background:transparent url(../imgs/icon14.png) scroll no-repeat -324px 0;
+}
+.four i {
+    background:transparent url(../imgs/icon14.png) scroll no-repeat -378px 0;
+}
+.slogan-container ul li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+.slogan-container ul li a:hover .one i {
+    background-position: 0 0;
+}
+
+
+
+/* server-conttainer的开始 */
+.server-container {
+    height:230px;
+    /* background-color: pink; */
+    border-bottom: 1px solid #fafafa;
+}
+.server {
+    padding-top:30px;
+}
+.server dl {
+    float:left;
+    width: 265px;
+    height: 132px;
+}
+.server .s5 {
+    width:114px;
+}
+.server i {
+    float: left;
+    width: 16px;
+    height: 14px;
+    margin: 3px 8px 0 0;
+}
+.server dl dd ul li a{
+    padding-left: 24px;
+    font-size: 12px;
+    color: #b4b4b4;
+}
+.server dl dt {
+    margin-bottom: 15px;
+    color: #666666;
+}
+.server dt i{
+    background: transparent url(../imgs/icon14.png) scroll no-repeat ;
+}
+.s1 dt i {
+    background-position: 0 -54px;
+}
+.s2 dt i {
+    background-position: -26px -54px;
+}
+.s3 dt i {
+    background-position: -52px -54px;
+}
+.s4 dt i {
+    background-position: -78px -54px;
+}
+.s5 dt i {
+    background-position: 0 -78px;
+}
+/* footer的开始 */
+.footer-container {
+    height: 180px;
+    font-size: 12px;
+}
+.footer {
+    padding: 30px 0 30px;
+}
+.footer-other {
+    padding: 0 8px;
+    text-align: center;
+    color: #888
+}
+.footer p {
+    text-align: center;
+    line-height: 1.5;
+}
+.copyright .img {
+    margin-top: 18px;
+}
